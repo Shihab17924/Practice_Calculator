@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.practice_calculator.CalculatorController">
+   <children>
+      <TextField fx:id="textDisplay" layoutX="1.0" layoutY="-1.0" prefHeight="50.0" prefWidth="400.0" />
+      <GridPane layoutX="7.0" layoutY="50.0" prefHeight="236.0" prefWidth="480.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handlerClearAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #a88732;" text="AC" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" onAction="#handlerActionOperation" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #59915e;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button mnemonicParsing="false" onAction="#handlerActionOperation" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #59915e;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="7" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handlerActionOperation" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #59915e;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="4" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handlerActionOperation" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #59915e;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handlerEqualeAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #96243f;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#handlerDecimalAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #e0adba;" text="." GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#handlerDigitAction" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #807c7d;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
